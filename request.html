@@ -17,15 +17,7 @@
   <div class="modal">
     <div class="icon">{% include icons/checklist.svg %}</div>
     <div class="checklist">
-          {% if page.uses contains "request-motion" %}
  <a class="motion" href="#" onclick='requestMotionPermission();'>{% include icons/warning.svg %}Allow gyroscope permissions</a>
-{% endif %}
-    {% if page.uses contains "request-location" %}
-<a class="location" href="#">{% include icons/warning.svg %}Allow location permissions</a>
-{% endif %}
-    {% if page.uses contains "request-camera" %}
-     <a class="camera" href="#">{% include icons/warning.svg %}Allow camera permissions</a>
-{% endif %}
    </div>
 
    <a href="JavaScript:void(0)" class="launch" onClick='var element = document.getElementById("request");
